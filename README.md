@@ -3,25 +3,28 @@
 This project is a simple store website with no server side and is fully implemented with react.js.
 This project uses only one api called fakeStoreApi.
 
-# How to open this project
+## Run Locally
 
-1. Get a clone of the project with git
-2. Entering the terminal
-3. Enter the command
+Clone the project
 
 ```bash
-   npm install
-
+  git clone https://github.com/AMIRALINE/shop-project/tree/dev
 ```
 
-4. Enter the this command.
+Go to the project directory
 
 ```bash
-   npm run dev
+  cd my-project
 ```
 
-5. Open the browser
-6. Enter the address "localhost:3000"
+Install dependencies
 
-- Be aware that your internet is on
-  published version : 0.1
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```

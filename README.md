@@ -8,7 +8,7 @@ This project uses only one api called fakeStoreApi.
 Clone the project
 
 ```bash
-  git clone https://github.com/AMIRALINE/shop-project/tree/dev
+  git clone https://github.com/AMIRALINE/shop-project
 ```
 
 Go to the project directory

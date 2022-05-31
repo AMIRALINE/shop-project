@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: Vazirmatn, sans-serif;
+}
+.w-card {
+  min-width: 20% !important;
+  max-width: 70% !important;
+}

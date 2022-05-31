@@ -13,3 +13,4 @@ This project uses only one api called fakeStoreApi.
 6. Enter the address "localhost: 3000"
 
 - Be aware that your internet is on
+  published version : 0.1

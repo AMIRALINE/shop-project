@@ -22,7 +22,7 @@ function Products() {
                 <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
                   <div className="mt-3 rounded-lg sm:mt-0">
                     <button className="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 lg:px-10 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                      <Link to="/categoies">دسه بندی ها</Link>
+                      <Link to="/categories">دسه بندی ها</Link>
                     </button>
                   </div>
                   <div className="mt-3 rounded-lg sm:mt-0 sm:ml-3">

@@ -8,6 +8,7 @@ import AppReducer from "../reducers/appReducer";
 import ProductPage from "./pages/ProductPage";
 import Products from "./pages/Products";
 import LogIn from "./pages/logIn";
+import Categories from "./pages/categories";
 
 export default function App(props) {
   let initState = {
@@ -46,7 +47,8 @@ export default function App(props) {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="/products" element={<Products />} />
-            <Route path="login" element={<LogIn />} />
+            <Route path="/login" element={<LogIn />} />
+            <Route path="/categories" element={<Categories />} />
             <Route path="*" element={<NoPage />} />
             {state.status == 404
               ? ""

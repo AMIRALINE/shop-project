@@ -1,15 +1,7 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function ProductCard(props) {
   let { Product } = props;
-  useEffect(() => {
-    fetch(
-      "http://ajax.googleapis.com/ajax/services/language/translate?v=1.0&q={helowoeld}&langpair={english}|{persian}"
-    )
-      .then((res) => res.json)
-      .then((json) => console.log(json));
-  });
   return (
     <div className="md:w-card w-fit bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
       <a href="#">

@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import ProductsContext from "../../contexts/AppContext";
+import AppContext from "../../contexts/AppContext";
 import ProductCard from "./productCard";
 
 export default function ProdectList(props) {
-  let { state } = useContext(ProductsContext);
+  let { state } = useContext(AppContext);
   return (
     // <div className="max-w-full">
     //   <h2 className="text-2xl text-gray-500">لیست محصولات</h2>

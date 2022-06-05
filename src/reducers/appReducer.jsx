@@ -20,7 +20,6 @@ let AppReducer = (state, action) => {
       };
       break;
     case "add_categories":
-      console.log(state);
       return {
         ...state,
         categories: action.categories,

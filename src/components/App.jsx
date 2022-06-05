@@ -3,12 +3,11 @@ import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./pages/layOut";
 import NoPage from "./pages/NoPage";
-import ProductsContext from "../contexts/AppContext";
+import AppContext from "../contexts/AppContext";
 import AppReducer from "../reducers/appReducer";
 import ProductPage from "./pages/ProductPage";
 import Products from "./pages/Products";
 import LogIn from "./pages/logIn";
-import categoryPage from "./pages/categoryPage";
 
 export default function App(props) {
   let initState = {
@@ -36,17 +35,12 @@ export default function App(props) {
   }, []);
   useEffect(() => {
     fetch("https://fakestoreapi.com/products/categories")
-      .then((response) => response.json())
-      .then((json) => {
-        dispath({
-          type: "add_categories",
-          categories: json,
-        });
-      });
+      .then((res) => res.json())
+      .then((json) => dispath({ type: "add_categories", categories: json }));
   }, []);
   console.log(state);
   return (
-    <ProductsContext.Provider value={{ state, dispath }}>
+    <AppContext.Provider value={{ state, dispath }}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -73,6 +67,6 @@ export default function App(props) {
           </Route>
         </Routes>
       </BrowserRouter>
-    </ProductsContext.Provider>
+    </AppContext.Provider>
   );
 }

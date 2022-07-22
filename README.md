@@ -1,3 +1,7 @@
+## We are sorry
+
+Badly this project is already closed because your API is destroyed and you can't develope this project until we changed our API.
+
 # shop-project
 
 This project is a simple store website with no server side and is fully implemented with react.js.
